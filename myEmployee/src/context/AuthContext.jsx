@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
-  const apiBase = 'http://localhost:5000/api';
+  const apiBase = 'http://54.163.58.47/api';
 
   useEffect(() => {
     // Apply theme
