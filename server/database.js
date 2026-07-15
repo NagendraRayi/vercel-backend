@@ -28,7 +28,9 @@ const UserSchema = new mongoose.Schema({
     sick: { type: Number, default: 8 },
     annual: { type: Number, default: 15 }
   },
-  status: { type: String, default: 'active' }
+  status: { type: String, default: 'active' },
+  resetPasswordToken: { type: String, default: '' },
+  resetPasswordExpires: { type: Date }
 });
 
 const AttendanceSchema = new mongoose.Schema({
